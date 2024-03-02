@@ -1,0 +1,17 @@
+# Configuration de l'application
+spring:
+  application:
+    name: kubernetes-che
+  datasource:
+    url: jdbc:mysql://mysql:3306/k8s-db?createDatabaseIfNotExist=true
+    username: 'root'
+    password: 'che'
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8080

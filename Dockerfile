@@ -4,6 +4,6 @@ LABEL maintainer="che444 macdialloisidk@groupeisi.com"
 
 EXPOSE 8080
 
-ADD target/kubernetes.jar kubernetes.jar
+ADD target/kubernetes-che.jar kubernetes-che.jar
 
-ENTRYPOINT ["java", "-jar", "kubernetes.jar"]
+ENTRYPOINT ["java", "-jar", "kubernetes-che.jar"]

@@ -1,12 +1,22 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: kubernetes
+  name: kubernetes-che
 spec:
   selector:
-    app: kubernetes
+    app: kubernetes-che
   ports:
     - protocol: TCP
       port: 8080
       targetPort: 8080
-  type: NodePort
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql
+spec:
+  selector:
+    app: mysql
+  ports:
+    - protocol: TCP
+      port: 3306
