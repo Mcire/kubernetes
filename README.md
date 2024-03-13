@@ -2,7 +2,7 @@
 This project is a Spring Boot application with a REST endpoint that congratulates the user on successful deployment on Kubernetes. 
 It uses Docker for packaging, MySQL as a database, and YAML files to deploy services on Kubernetes.
 
-# Minikube instalation
+# Minikube installation
 To work with minikube, we need :
 - install Chocolatey, a package manager for Windows, via PowerShell. 
 ```chocolatey
@@ -30,7 +30,7 @@ ADD target/kubernetes-che.jar kubernetes-che.jar
 
 ENTRYPOINT ["java", "-jar", "kubernetes-che.jar"]
 ```
-ce Dockerfile construit une image Docker contenant l'application Spring Boot et configure le conteneur pour exécuter cette application au démarrage.
+this Dockerfile builds a Docker image containing the Spring Boot application and configures the container to run this application at startup.
 
 ## application.yml
 ```yml
